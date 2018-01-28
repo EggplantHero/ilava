@@ -1,0 +1,272 @@
+/*GLOBAL*/
+*{
+  transition: all .6s ease;
+}
+
+@font-face {
+  font-family: 'MyWebFont';
+  src: url('webfont.eot'); /* IE9 Compat Modes */
+  src: url('webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url('webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+.navbar-brand{
+  border:2px solid goldenrod;
+  border-radius:10px;
+  padding:4px;
+  margin:0;
+  height:33px;
+  margin:8px 0;
+  background-color:white;
+}
+
+.navbar-brand .ilava{
+  font-family:"Neucha", cursive;
+  font-size: 20px;
+  font-weight:700;
+}
+
+.navbar-brand .bbq{
+  font-size:11px;
+  font-weight:bold;
+}
+
+@media only screen and (min-width:768px){
+  .navbar>.container-fluid .navbar-brand{
+    margin-left:-8px;
+  }
+}
+
+body{
+  font-family:'Open Sans', sans-serif;
+  background-color:rgba(244,165,28,0.6);
+}
+
+h1, h2 {
+    text-decoration: none;
+    display:inline-block;
+    border-bottom: 3px solid transparent;
+    width: 0px;
+    transition: 0.5s ease;
+    white-space: nowrap;
+    /*height: 25px;*/
+}
+
+h1:hover {
+    border-bottom: 3px solid rgb(244,165,28);
+    width: 100px;
+}
+h2:hover{
+  border-bottom: 3px solid rgb(244,165,28);
+  width:50px;
+}
+
+::selection{
+  background-color:lightblue;
+}
+
+/*NAVBAR*/
+.navbar{
+  border-radius:0;
+  width:100%;
+  background-color:rgb(244,208,157);
+}
+
+.navbar-logo{
+  width:30px;
+  height:30px;
+  margin-right: 5px;
+  margin-top:-5px;
+  float:left;
+}
+
+.navbar, .navbar-default .navbar-collapse, #collapsed{
+  border-color: goldenrod;
+}
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus{
+  background-color:rgb(244,180,100);
+}
+
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus{
+  background-color:white;
+}
+
+/*ALL SECTIONS*/
+section{
+  padding:30px;
+}
+
+section:nth-child(2n+1){
+  background-color:rgb(244,208,157);
+}
+
+section:nth-child(2n){
+  background-color:rgb(250,225,190);
+}
+
+/*HOME*/
+.jumbotron{
+  background-color:rgba(0,0,0,0.6);
+  text-align: center;
+}
+
+.jumbotron img{
+  width: 100%;
+}
+
+.jumbotron p{
+  color:#bbbbbb;
+  font-size: 14px;
+  margin:2px;
+}
+
+section#home{
+  margin-top:100px;
+  background-image: url("../img/banner.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 60%;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/*MENU*/
+.wrapper{
+  height:200px;
+  margin:0;
+  padding:0;
+  position:relative;
+  background-size: cover;
+}
+
+.wrapper span {
+    /*Dark overlay + text*/
+    display: block;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    background: rgba(0,0,0,.6);
+    transition: all 1s;
+    color:#cccccc;
+    font-size:18px;
+    text-align:center;
+    padding-top:50px;
+}
+
+@media only screen and (max-width:480px){
+  .wrapper{
+    height:140px;
+  }
+  .wrapper span{
+    font-size:14px;
+  }
+}
+
+/*MENU HOVER EFFECTS*/
+.wrapper:hover span {
+    opacity: 1;
+}
+
+/*FOOD ITEM URLS*/
+.wrapper:first-child{
+  background-image: url("../img/menu/1-chicken-combo.jpg");
+  background-position: 50% 50%;
+}
+.wrapper:nth-child(2){
+  background-image: url("../img/menu/2-kaluapork.jpg");
+  background-position: 50% 50%;
+}
+.wrapper:nth-child(3){
+  background-image: url("../img/menu/3-seafoodmix.jpg");
+  background-position: 50% 50%;
+}
+.wrapper:nth-child(4){
+  background-image: url("../img/menu/4-fishandshrimp.jpg");
+  background-position: 50% 50%;
+}
+.wrapper:nth-child(5){
+  background-image: url("../img/menu/5-fishandbbqchicken.jpg");
+  background-position: 50% 50%;
+}
+.wrapper:nth-child(6){
+  background-image: url("../img/menu/6-bbqchickenandbeef.jpg");
+  background-position: 50% 50%;
+}
+.wrapper:nth-child(7){
+  background-image: url("../img/menu/7-bbqbeefandribs.jpg");
+  background-position: 50% 50%;
+}
+.wrapper:nth-child(8){
+  background-image: url("../img/menu/8-alohabbqmix.jpg");
+  background-position: 50% 50%;
+}
+
+button.btn-primary, button#expand{
+  width:100%;
+  margin-bottom:5px;
+  text-align: center;
+}
+
+#menu button{
+  position:relative;
+}
+
+#menu button>i.fa{
+  position:absolute;
+  left:4%;
+  top:25%;
+  color:white;
+}
+
+#menu button>span{
+  position:absolute;
+  right:2%;
+  top:25%;
+}
+
+button:hover>i.fa{
+  font-weight:bolder;
+}
+
+.salad{
+  background-color: rgba(244,165,28,0.6);
+}
+
+/*ORDER ONLINE*/
+#order img{
+  width:60%;
+  height:100px;
+  border:1px solid indianred;
+  border-radius:5px;
+  background-color:rgb(244,208,157);
+}
+
+#order img:hover{
+  width:67%;
+  height:110px;
+  margin-top:-10px;
+}
+
+/*CATERING*/
+.table>tbody>tr.warning>td, .table>thead>tr.warning>td{
+  /*background-color:rgb(252,240,220);*/
+}
+
+/*CONTACT*/
+hr{
+  border-color:goldenrod;
+}
+
+.fa{
+  margin: 0 10px;
+  color: #555555;
+}
+
+#map{
+  width:100%;
+  height:400px;
+  background-color:grey;
+}

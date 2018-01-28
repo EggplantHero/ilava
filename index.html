@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html>
+<!-- HEAD -->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- title -->
+    <title>iLava Hawaiian BBQ</title>
+    <!-- font-awesome -->
+    <script src="https://use.fontawesome.com/9f24ccccec.js"></script>
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Neucha|Open+Sans" rel="stylesheet">
+    <!-- favicon -->
+    <link rel="icon" href="img\icon.jpg">
+    <!-- Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- css links-->
+    <link rel="stylesheet" href="css\main.css">
+  </head>
+<!-- BODY   -->
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button id="collapsed" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" id="home-btn" href="#">
+            <img src="img/icon.jpg" class="d-inline-block align-top navbar-logo" alt="logo">
+            <span class="ilava">iLava</span> <span class="bbq">HAWAIIAN BARBECUE</span>
+          </a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li><a id="menu-btn" href="#">Menu</a></li>
+            <li><a id="order-btn" href="#">Delivery</a></li>
+            <li><a id="catering-btn" href="#">Catering</a></li>
+          </ul>
+          <ul class=" nav navbar-nav navbar-right">
+            <li><a id="contact-btn" href="#">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <!-- HOME -->
+      <section id="home">
+        <div class="row">
+          <div class="col-md-4 col-md-offset-4 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2 jumbotron">
+            <img src="img/ilava.jpg" alt="">
+            <p>Mon - Sun: 11am - 9pm</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- MENU -->
+      <section id="menu">
+        <h1><i class="fa fa-cutlery" aria-hidden="true"></i>Menu</h1>
+        <div class="row">
+          <div class="wrapper col-md-3 col-xs-6">
+            <span>#1 - Chicken Combo</span>
+          </div>
+          <div class="wrapper col-md-3 col-xs-6">
+            <span>#2 - Kalua Pork &amp; Laulau</span>
+          </div>
+          <div class="wrapper col-md-3 col-xs-6">
+            <span>#3 - Seafood Mix</span>
+          </div>
+          <div class="wrapper col-md-3 col-xs-6">
+            <span>#4 - Fish &amp; Shrimp</span>
+          </div>
+          <div class="wrapper col-md-3 col-xs-6">
+            <span>#5 - Fish &amp; BBQ Chicken</span>
+          </div>
+          <div class="wrapper col-md-3 col-xs-6">
+            <span>#6 - BBQ Chicken &amp; Beef</span>
+          </div>
+          <div class="wrapper col-md-3 col-xs-6">
+            <span>#7 - BBQ Beef &amp; Short Ribs</span>
+          </div>
+          <div class="wrapper col-md-3 col-xs-6">
+            <span>#8 - Aloha BBQ Mix</span>
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <!-- 1st column -->
+          <div class="col-md-3 col-sm-6">
+            <button id="expand" type="button" class="btn btn-warning SeeMore2" data-toggle="collapse" data-target="#chicken, #beef, #burgers, #minimeal, #favorites, #seafood, #familymeal, #appetizers, #sidedishes, #salad, #chowmein, #ricebowl, #noodlesoup, #beverages, #smoothies"><i class="fa fa-plus-square-o white" aria-hidden="true"></i>Expand All</button>
+
+            <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#chicken"><i class="fa fa-plus-square-o white" aria-hidden="true"></i>Chicken</button>
+            <ul id="chicken" class="collapse">
+              <li>Hawaiian BBQ Chicken <span class="badge">$8.49</span></li>
+              <li>Chicken Katsu <span class="badge">$8.99</span></li>
+              <li>Teriyaki Chicken <span class="badge">$8.99</span></li>
+              <li>Curry Chicken <span class="badge">$8.99</span></li>
+              <li>Curry Chicken Katsu <span class="badge">$8.99</span></li>
+              <li>Lemon Pepper Chicken <span class="badge">$10.79</span></li>
+            </ul>
+            <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#beef"><i class="fa fa-plus-square-o white" aria-hidden="true"></i>Beef and Pork</button>
+            <ul id="beef" class="collapse">
+              <li>Loco Moco <span class="badge">$9.99</span></li>
+              <li>Hamburger Steak <span class="badge">$9.99</span></li>
+              <li>Spam Moco <span class="badge">$8.59</span></li>
+              <li>Hawaiian BBQ Beef <span class="badge">$9.79</span></li>
+              <li>Kalbi Short Ribs <span class="badge">$11.99</span></li>
+              <li>Kalua Pork <span class="badge">$9.79</span></li>
+              <li>Lau Lau <span class="badge">$9.99</span></li>
+            </ul>
+            <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#burgers"><i class="fa fa-plus-square-o white" aria-hidden="true"></i>Burger and Fries <span class="badge">$7.50</span></button>
+            <ul id="burgers" class="collapse">
+              <span class="small text-muted">Includes Cajun Fries</span>
+              <li>Aloha Cheese Burger</li>
+              <li>Hawaiian BBQ Chicken Burger</li>
+              <li>Fish Burger</li>
+            </ul>
+          </div>
+          <!-- 2nd column -->
+          <div class="col-md-3 col-sm-6">
+            <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#minimeal"><i class="fa fa-plus-square-o white" aria-hidden="true"></i>Mini Meal <span class="badge">$7.29</span></button>
+            <ul id="minimeal" class="collapse">
+              <span class="small text-muted">Includes White Rice, Macaroni Salad and Mixed Veggies</span><br>
+              <span class="small text-muted">*Chicken Breast +$0.25</span>
+              <li>Hawaiian BBQ Chicken</li>
+              <li>Curry Chicken</li>
+              <li>Hawaiian BBQ Beef</li>
+              <li>Curry Chicken Katsu</li>
+              <li>Chicken Katsu</li>
+              <li>Island White Fish</li>
+              <li>Kalua Pork</li>
+              <li>Teriyaki chicken</li>
+            </ul>
+            <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#favorites"><i class="fa fa-plus-square-o white" aria-hidden="true"></i>Hawaiian Favorites</button>
+            <ul id="favorites" class="collapse">
+              <span class="small">The eight menu items featured above!</span>
+              <span class="small text-muted">Includes 2 scoops of Rice, 1 scoop of Macaroni Salad and Mixed Veggies</span>
+              <li>#1 Chicken Combo <span class="badge">$8.99</span></li>
+              <li>#2 Kalua Pork &amp; Laulau <span class="badge">$8.99</span></li>
+              <li>#3 Seafood Mix <span class="badge">$10.49</span></li>
+              <li>#4 Fish &amp; Shrimp <span class="badge">$9.59</span></li>
+              <li>#5 Fish &amp; BBQ Chicken <span class="badge">$9.99</span></li>
+              <li>#6 BBQ Chicken &amp; Beef <span class="badge">$999</span></li>
+              <li>#7 BBQ Beef &amp; Short Ribs <span class="badge">$10.99</span></li>
+              <li>#8 Aloha BBQ Mix <span class="badge">$11.99</span></li>
+            </ul>
+            <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#seafood"><i class="fa fa-plus-square-o white" aria-hidden="true"></i>Seafood</button>
+            <ul id="seafood" class="collapse">
+              <span class="small text-muted">Includes 2 scoops of Rice, 1 scoop of Macaroni Salad and Mixed Veggies</span>
+              <li>Teriyaki Grilled Salmon <span class="badge">$8.49</span></li>
+              <li>Island White Fish <span class="badge">$8.49</span></li>
+              <li>Honey Walnut Prawns <span class="badge">$8.49</span></li>
+              <li>Garlic Shrimp <span class="badge">$8.49</span></li>
+              <li>Crispy Shrimp <span class="badge">$8.49</span></li>
+              <li>Fish and Chips <span class="small text-muted">(No Side Dishes)</span> <span class="badge">$8.49</span></li>
+              <li>Salt and Pepper Shrimp <span class="small text-muted">(Shell On)</span> <span class="badge">$8.49</span></li>
+            </ul>
+            <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#familymeal"><i class="fa fa-plus-square-o white" aria-hidden="true"></i>Family Meal <span class="badge">$34.99</span></button>
+            <ul id="familymeal" class="collapse">
+              <span class="small">Good for 4 people</span><br>
+              <span class="small text-muted">Includes Rice, Macaroni Salad and Mixed Veggies</span>
+              <span class="badge">Choose 3 of the following items:</span>
+              <li>BBQ Chicken</li>
+              <li>Teriyaki Chicken</li>
+              <li>Curry Chicken</li>
+              <li>Curry Chicken Katsu</li>
+              <li>Hamburger Steak</li>
+              <li>Chicken Katsu</li>
+              <li>Island White Fish</li>
+              <li>Kalua Pork</li>
+              <li>BBQ Beef</li>
+              <li>Kalbi Short Ribs <span class="badge">+$3.00</span></li>
+              <li>Crispy Shrimp <span class="badge">+$2.00</span></li>
+              <li>Chicken Breast <span class="badge">+$2.00</span></li>
+            </ul>
+          </div>
+          <!-- 3rd column -->
+          <div class="col-md-3 col-sm-6">
+            <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#appetizers"><i class="fa fa-plus-square-o white" aria-hidden="true"></i>Appetizers</button>
+            <ul id="appetizers" class="collapse">
+              <li>Spam Musubi <span class="small text-muted">(2 pcs)</span> <span class="badge">$4.49</span></li>
+              <li>BBQ Chicken Musubi <span class="small text-muted">(2 pcs)</span> <span class="badge">$4.49</span></li>
+              <li>Crispy Shrimp <span class="small text-muted">(6 pcs)</span> <span class="badge">$6.19</span></li>
+              <li>Crab Rangoon <span class="small text-muted">(8 pcs)</span> <span class="badge">$5.29</span></li>
+              <li>Potstickers <span class="small text-muted">(8 pcs)</span> <span class="badge">$5.39</span></li>
+              <li>Spring Roll <span class="small text-muted">(6 pcs)</span> <span class="badge">$4.99</span></li>
+              <li>Malasadas <span class="small text-muted">(10 pcs)</span> <span class="badge">$4.99</span></li>
+              <li>Chicken Wings <span class="small text-muted">(4 pcs)</span> <span class="badge">$1.99</span></li>
+            </ul>
+            <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#sidedishes"><i class="fa fa-plus-square-o white" aria-hidden="true"></i>Side Dishes</button>
+            <ul id="sidedishes" class="collapse">
+              <li>Steamed Rice <span class="small text-muted">(2 scoops)</span> <span class="badge">$1.79</span></li>
+              <li>Macaroni Salad <span class="small text-muted">(2 scoops)</span> <span class="badge">$3.39</span></li>
+              <li>Mixed Veggies <span class="badge">$2.50</span></li>
+            </ul>
+            <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#salad"><i class="fa fa-plus-square-o white" aria-hidden="true"></i>Salad</button>
+            <ul id="salad" class="collapse">
+              <span class="small">Fresh, made-to-order Romaine Lettuce, Tomato, Carrot, Cucumber</span>
+              <div class="salad">
+                <li>Side <span class="badge">$2.99</span></li>
+                <li>Full <span class="badge">$4.99</span></li>
+                <li>with Protein <span class="badge">$8.49</span></li>
+              </div>
+              <span class="text-muted small">Protein Options: Teriyaki Chicken, Chicken Katsu, BBQ Beef, Lemon Pepper Chicken, Breast, Salmon, Crispy Shrimp (6pcs), Grilled Shrimp (8pcs)</span>
+            </ul>
+            <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#chowmein"><i class="fa fa-plus-square-o white" aria-hidden="true"></i>Chowmein/Fried Rice<span class="badge">$8.25</span></button>
+            <ul id="chowmein" class="collapse">
+              <span>Protein Option:</span>
+              <li>BBQ Chicken</li>
+              <li>BBQ Beef</li>
+              <li>Shrimp</li>
+              <li>Vegetable</li>
+            </ul>
+          </div>
+          <!-- 4th column -->
+          <div class="col-md-3 col-sm-6">
+            <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#ricebowl"><i class="fa fa-plus-square-o white" aria-hidden="true"></i>Rice Bowl <span class="badge">$7.29</span></button>
+            <ul id="ricebowl" class="collapse">
+              <span class="small text-muted">Includes Rice, Mixed Veggies and Teriyaki Sauce</span>
+              <li>Teriyaki Chicken </li>
+              <li>Teriyaki Beef</li>
+              <li>Teriyaki Salmon</li>
+              <li>Teriyaki Shrimp</li>
+              <li>Chicken Katsu</li>
+            </ul>
+            <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#noodlesoup"><i class="fa fa-plus-square-o white" aria-hidden="true"></i>Noodle Soup <span class="badge">$8.49</span></button>
+            <ul id="noodlesoup" class="collapse">
+              <span class="small text-muted">Served with fresh home-made Chicken Broth</span>
+              <li>Seafood</li>
+              <li>BBQ Chicken</li>
+              <li>BBQ Beef</li>
+              <li>Chicken Katsu</li>
+            </ul>
+            <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#smoothies"><i class="fa fa-plus-square-o white" aria-hidden="true"></i>Tropical Smoothies</button>
+            <ul id="smoothies" class="collapse">
+              <li>Hawaiian Punch</li>
+              <li>Hawaiian Sunset</li>
+              <li>Hawaiian Sunrise</li>
+              <li>Hawaiian Ocean</li>
+              <li>Island Berry</li>
+              <li>Strawberry Banana</li>
+              <li>Mango</li>
+              <li>Wild Berry</li>
+              <li>Guava</li>
+              <li>Pina Colada</li>
+            </ul>
+            <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#beverages"><i class="fa fa-plus-square-o white" aria-hidden="true"></i>Beverages </button>
+            <ul id="beverages" class="collapse">
+              <li>Soft Drinks</li>
+              <li>Hawaiian Suns:
+                <ul>
+                  <li>Lilikoi Passion</li>
+                  <li>Luau Punch</li>
+                  <li>Mango-Orange</li>
+                  <li>Passion Orange</li>
+                  <li>Green Tea</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ORDER -->
+      <section id="order">
+        <h1><i class="fa fa-shopping-cart" aria-hidden="true"></i>Delivery</h1>
+        <hr>
+        <div class="row text-center">
+          <p>We deliver to you:</p>
+          <div class="col-md-4 col-md-offset-0 col-sm-6 col-sm-offset-3 text-center">
+            <br>
+            <a href="https://www.grubhub.com/restaurant/ilava-hawaiian-barbecue-1446-high-st-oakland/493346?classicAffiliateId=%2Fr%2Fw%2F55201%2F&utm_source=content-cms.grubhub.com&utm_medium=OOL&utm_campaign=order%20online&utm_content=493346">
+              <img src="img\grubhub.jpg" alt="Grubhub">
+            </a>
+          </div>
+          <div class="col-md-4 col-md-offset-0 col-sm-6 col-sm-offset-3 text-center">
+            <br>
+            <a href="https://www.doordash.com/store/ilava-hawaiian-barbecue-oakland-141430/">
+              <img src="img\doordash.jpg" alt="DoorDash">
+            </a>
+          </div>
+          <div class="col-md-4 col-md-offset-0 col-sm-6 col-sm-offset-3 text-center">
+            <br>
+            <a href="https://www.ubereats.com/san-francisco/food-delivery/ilava-hawaiian-barbecue/CLSz2R6cSquKNKZGwfY_6g/">
+              <img src="img\ubereats.jpg" alt="UberEATS">
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- CATERING -->
+      <section id="catering">
+        <!-- <h1><i class="fa fa-group" aria-hidden="true"></i>Catering</h1>
+        <hr>
+        <h1 class="lead">A La Carte</h1>
+        <button class="btn btn-primary">See More</button> -->
+        <h1><i class="fa fa-group" aria-hidden="true"></i>Catering</h1>
+        <div class="row">
+          <div class="col-md-6">
+            <hr>
+            <h1 class="lead"><i class="fa fa-file-text" aria-hidden="true"></i>A La Carte:</h1>
+            <br>
+            <button type="button" class="btn btn-warning" data-toggle="collapse" data-target="#table">See More</button>
+            <br><br>
+            <div id="table" class="collapse">
+              <table class="table table-condensed">
+                <thead>
+                  <tr class="warning">
+                    <th>A LA CARTE</th>
+                    <th>Small <br><span class="text-muted small">(10-12 servings)</span></th>
+                    <th>Medium <br><span class="text-muted small">(20-25 servings)</span></th>
+                    <th>Large <br><span class="text-muted small">(45-50 servings)</span></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>BBQ Chicken</td>
+                    <td>$24.99</td>
+                    <td>$47.99</td>
+                    <td>$90.99</td>
+                  </tr>
+                  <tr class="warning">
+                    <td>Teriyaki Chicken</td>
+                    <td>$24.99</td>
+                    <td>$47.99</td>
+                    <td>$90.99</td>
+                  </tr>
+                  <tr>
+                    <td>Chicken Katsu</td>
+                    <td>$24.99</td>
+                    <td>$47.99</td>
+                    <td>$90.99</td>
+                  </tr>
+                  <tr class="warning">
+                    <td>Lemon Pepper Chicken</td>
+                    <td>$25.99</td>
+                    <td>$49.99</td>
+                    <td>$97.99</td>
+                  </tr>
+                  <tr>
+                    <td>Kalbi Short Ribs</td>
+                    <td>$39.99</td>
+                    <td>$79.99</td>
+                    <td>$159.99</td>
+                  </tr>
+                  <tr class="warning">
+                    <td>BBQ Beef</td>
+                    <td>$32.99</td>
+                    <td>$62.99</td>
+                    <td>$129.99</td>
+                  </tr>
+                  <tr>
+                    <td>Kalua Pork</td>
+                    <td>$30.99</td>
+                    <td>$59.99</td>
+                    <td>$119.99</td>
+                  </tr>
+                  <tr class="warning">
+                    <td>Island White Fish</td>
+                    <td>$27.99</td>
+                    <td>$52.99</td>
+                    <td>$109.99</td>
+                  </tr>
+                  <tr>
+                    <td>Crispy Shrimp</td>
+                    <td>$35.99</td>
+                    <td>$69.99</td>
+                    <td>$139.99</td>
+                  </tr>
+                  <tr class="warning">
+                    <td>Garden Salad</td>
+                    <td>$16.99</td>
+                    <td>$29.99</td>
+                    <td>$53.99</td>
+                  </tr>
+                  <tr>
+                    <td>Macaroni Salad</td>
+                    <td>$19.99</td>
+                    <td>$34.99</td>
+                    <td>$59.99</td>
+                  </tr>
+                  <tr class="warning">
+                    <td>Spam Musubi</td>
+                    <td>$24.99</td>
+                    <td>$43.99</td>
+                    <td>$87.99</td>
+                  </tr>
+                  <tr>
+                    <td>BBQ Chicken Musubi</td>
+                    <td>$24.99</td>
+                    <td>$43.99</td>
+                    <td>$87.99</td>
+                  </tr>
+                  <tr class="warning">
+                    <td>Crab Rangoon</td>
+                    <td>$17.99</td>
+                    <td>$25.99</td>
+                    <td>$45.99</td>
+                  </tr>
+                  <tr>
+                    <td>Salt &amp; Pepper Shrimp</td>
+                    <td>$30.99</td>
+                    <td>$55.99</td>
+                    <td>$77.99</td>
+                  </tr>
+                  <tr class="warning">
+                    <td>Spring Roll</td>
+                    <td>$30.99</td>
+                    <td>$55.99</td>
+                    <td>$77.99</td>
+                  </tr>
+                  <tr>
+                    <td>Steamed Rice</td>
+                    <td>$9.99</td>
+                    <td>$18.99</td>
+                    <td>$34.99</td>
+                  </tr>
+                  <tr class="warning">
+                    <td>Shrimp Chow Mein</td>
+                    <td>$22.99</td>
+                    <td>$44.99</td>
+                    <td>$69.99</td>
+                  </tr>
+                  <tr>
+                    <td>Shrimp Fried Rice</td>
+                    <td>$22.99</td>
+                    <td>$44.99</td>
+                    <td>$69.99</td>
+                  </tr>
+                </tbody>
+              </table>
+              <!-- <div class="container"> -->
+                <p class="small text-muted">Mimimum 50% Deposit is required when placing the order. <br> Please provide 24-hours notice for cancellation. <br> Parties who do not cancel in a timely manner may not have the deposit reunded.</p>
+                <p class="small text-muted">Macaroni Salad contains seafood. <br> Prices are subject to change without notice. <br> Some food items may contain seafood, please inquire. <br> Some of our food may contain or have come in contact with nuts, please take the necessary precautions for your safety.</p>
+              <!-- </div> -->
+            </div>
+          </div>
+          <div class="col-md-6">
+            <hr>
+            <h1 class="lead"><i class="fa fa-gift" aria-hidden="true"></i>Party Packs:</h1>
+            <br>
+            <button type="button" class="btn btn-warning" data-toggle="collapse" data-target="#party">See More</button>
+            <div id="party" class="collapse">
+              <h1 class="lead">1. Your Party Size?</h1>
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-md-6">
+                    <h5>10-12 People <span class="badge">$99.99</span></h5>
+                    <ul>
+                      <li>2 Small Entrees</li>
+                      <li>1 Small Salad</li>
+                      <li>1 Medium Rice</li>
+                      <li>Crab Rangoon (15pcs)</li>
+                    </ul>
+                  </div>
+                  <div class="col-md-6">
+                    <h5>20-25 People <span class="badge">$199.99</span></h5>
+                    <ul>
+                      <li>2 Medium Entrees</li>
+                      <li>1 Medium Salad</li>
+                      <li>1 Large Rice</li>
+                      <li>Crab Rangoon (25pcs)</li>
+                    </ul>
+                  </div>
+                  <div class="col-md-6">
+                    <h5>45-50 People <span class="badge">$359.99</span></h5>
+                    <ul>
+                      <li>4 Medium Entrees</li>
+                      <li>1 Large Salad</li>
+                      <li>2 Large Rice</li>
+                      <li>Crab Rangoon (50pcs)</li>
+                    </ul>
+                  </div>
+                  <div class="col-md-6">
+                    <h5>95-100 People <span class="badge">$699.99</span></h5>
+                    <ul>
+                      <li>4 Large Entrees</li>
+                      <li>2 Large Salad</li>
+                      <li>4 Large Rice</li>
+                      <li>Crab Rangoon (100pcs)</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <hr>
+              <h1 class="lead">2. Choose Entrees:</h1>
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-md-6">
+                    <ul>
+                      <li>BBQ Chicken</li>
+                      <li>Chicken Katsu</li>
+                      <li>Curry Chicken</li>
+                      <li>Curry Chicken Katsu</li>
+                    </ul>
+                  </div>
+                  <div class="col-md-6">
+                    <ul>
+                      <li>BBQ Beef</li>
+                      <li>Teriyaki Chicken</li>
+                      <li>Kalua Pork</li>
+                      <li>Island White Fish</li>
+                    </ul>
+                  </div>
+                  <br>
+                  <p class="small text-muted">*Items below may require additional charge for each tray:</p>
+                  <table class="table table-condensed">
+                    <thead>
+                      <tr class="warning">
+                        <td>Item</td>
+                        <td>Small</td>
+                        <td>Medium</td>
+                        <td>Large</td>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Crispy Shrimp:</td>
+                        <td>+$4</td>
+                        <td>+$8</td>
+                        <td>+$12</td>
+                      </tr>
+                      <tr class="warning">
+                        <td>Kalbi Short Ribs:</td>
+                        <td>+$12</td>
+                        <td>+$24</td>
+                        <td>+$48</td>
+                      </tr>
+                      <tr>
+                        <td>Lemon Pepper Chicken Breast:</td>
+                        <td>+$4</td>
+                        <td>+$8</td>
+                        <td>+$16</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <hr>
+              <h1 class="lead">3.Choose Salads:</h1>
+              <div class="container-fluid">
+                <div class="row">
+                  <ul>
+                    <li>Macaroni Salad</li>
+                    <li>Garden Salad</li>
+                    <li>Steamed Mixed Veggies</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact">
+        <h1><i class="fa fa-envelope" aria-hidden="true"></i>Contact Us</h1>
+        <div class="row">
+          <div class="col-md-6">
+            <hr>
+            <h1 class="lead"><i class="fa fa-clock-o" aria-hidden="true"></i>Store Hours:</h1>
+            <p>Mon - Sun: 11am - 9pm</p>
+            <hr>
+            <h1 class="lead"><i class="fa fa-map-marker" aria-hidden="true"></i>Address:</h1>
+            <p>iLava Hawaiian Barbecue<br>
+              1446 High Street<br>
+              Oakland, CA 94601</p>
+            <hr>
+            <h1 class="lead"><i class="fa fa-phone" aria-hidden="true"></i>Phone Number:</h1>
+            <p><a href="tel:5102619888">(510) 261-9888</a><p>
+            <hr>
+            <h1 class="lead"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i>Like us on:</h1>
+            <br>
+            <a target="_blank" href="https://www.facebook.com/iLavaHawaiianBarbecue/"><button type="button" class="btn btn-warning"><i class="fa fa-2x fa-facebook" aria-hidden="true"></i></button></a>
+            <a target="_blank" href="http://www.thepictaram.club/instagram/ilavahawaiianbbq"><button type="button" class='btn btn-warning'><i class="fa fa-2x fa-instagram" aria-hidden="true"></i></button></a>
+            <a target="_blank" href="https://www.yelp.com/biz/ilava-hawaiian-barbecue-oakland-2"><button type="button" class="btn btn-warning"><i class="fa fa-2x fa-yelp" aria-hidden="true"></i></button></a>
+          </div>
+          <div class="col-md-6">
+            <hr>
+            <p>Find us here!</p>
+            <div id="map"></div>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <p class="text-right text-muted small">© 2017 by iLava Hawaiian BBQ.</p>
+      </footer>
+    </div>
+
+
+    <!-- JQuery CDN-->
+    <script  src="https://code.jquery.com/jquery-3.2.1.min.js"  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="  crossorigin="anonymous"></script>
+    <!-- Bootstrap.js CDN -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- JQuery scrollTo plugin-->
+    <script type = "text/javascript" src="js\jquery.scrollTo\jquery.scrollTo.js"></script>
+    <!-- Maps API -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAB0s3p1hR1xdYiHx38TouNctsaSP-5xJM&callback=initMap"></script>
+    <!-- main.js -->
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>
